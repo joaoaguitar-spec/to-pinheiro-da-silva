@@ -46,7 +46,7 @@ def check_password() -> bool:
         try:
             expected = st.secrets["app_password"]
         except Exception:
-            expected = "criatura"
+            expected = "Batman"
         if pw == expected:
             st.session_state.auth_ok = True
             st.rerun()
