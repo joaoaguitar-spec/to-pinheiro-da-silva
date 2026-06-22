@@ -93,7 +93,16 @@ page = st.sidebar.radio(
 # ---------- páginas ----------
 if page == "Início":
     st.title("Tó Pinheiro da Silva")
-    st.caption("Um arquivo vivo — quem é o Tó e o que fez com a CRIATURA")
+    st.caption("Engenheiro de som · CRIATURA")
+    st.markdown(
+        "O Tó — **António Pinheiro da Silva** — é o engenheiro de som que "
+        "**misturou e masterizou** os dois álbuns da CRIATURA: *Aurora* (2016) "
+        "e *Bem Bonda* (2021). É uma das figuras mais importantes da produção "
+        "discográfica portuguesa, com mais de 150 discos gravados ao longo de "
+        "décadas. Este arquivo é um **tributo em vida** — a memória do que a "
+        "banda viveu e aprendeu com ele."
+    )
+    st.divider()
     st.markdown(read_md("to_pinheiro_biografia_e_obra.md"))
 
 elif page == "Ouvir":
