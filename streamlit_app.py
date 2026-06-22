@@ -14,7 +14,7 @@ Estrutura esperada:
 
 Correr localmente:  pip install -r requirements.txt  &&  streamlit run streamlit_app.py
 Palavra-passe: definir em .streamlit/secrets.toml ->  app_password = "Batman"
-(enquanto não existir, usa "Batman " — mudar antes de qualquer deploy)
+(enquanto não existir, usa "Batman" — mudar antes de qualquer deploy)
 """
 
 from pathlib import Path
