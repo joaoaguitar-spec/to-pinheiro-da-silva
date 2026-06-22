@@ -142,7 +142,13 @@ elif page == "Álbuns":
 
 elif page == "Cronologia":
     st.title("Cronologia")
-    st.write("Marcos confirmados do percurso do Tó com a CRIATURA.")
+    st.markdown(
+        "Esta cronologia segue o trabalho **documentado** do Tó com a CRIATURA, "
+        "da gravação ao lançamento dos dois álbuns. Cada marco está sustentado "
+        "pelos créditos oficiais e pela prova recolhida no arquivo. É um fio "
+        "condutor do percurso que a banda fez com ele em estúdio."
+    )
+    st.divider()
     milestones = [
         ("2014–2015", "Gravação de *Aurora* (Musibéria · Kimahera · Quarto ao Lado)."),
         ("5 fev 2016", "Lançamento de *Aurora* — mistura e masterização: Tó."),
