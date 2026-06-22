@@ -107,7 +107,14 @@ if page == "Início":
 
 elif page == "Ouvir":
     st.title("Ouvir")
-    st.write("Os dois álbuns que o Tó **misturou e masterizou**.")
+    st.caption("Os dois álbuns que o Tó misturou e masterizou")
+    st.markdown(
+        "Aqui ficam os **dois álbuns da CRIATURA** em que o Tó assinou a "
+        "**mistura e a masterização**: *Aurora* (2016) e *Bem Bonda* (2021). "
+        "São o testemunho sonoro do trabalho que a banda fez com ele — podem "
+        "ouvi-los na íntegra a partir do Bandcamp, aqui mesmo."
+    )
+    st.divider()
     st.subheader("Aurora (2016)")
     components.iframe(
         "https://bandcamp.com/EmbeddedPlayer/album=1417799381/size=large/"
