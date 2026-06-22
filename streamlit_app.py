@@ -3,7 +3,7 @@ Arquivo Tó Pinheiro da Silva — CRIATURA
 Ponto de partida (v0) para o site privado. O Claude Code parte daqui e completa.
 
 Estrutura esperada:
-  app.py
+  streamlit_app.py
   requirements.txt
   content/                      <- colocar aqui os ficheiros do source pack
     to_pinheiro_biografia_e_obra.md
@@ -12,7 +12,7 @@ Estrutura esperada:
     to_pinheiro_da_silva_criatura_knowledge_base.md
     to_pinheiro_manual_memories.md
 
-Correr localmente:  pip install -r requirements.txt  &&  streamlit run app.py
+Correr localmente:  pip install -r requirements.txt  &&  streamlit run streamlit_app.py
 Palavra-passe: definir em .streamlit/secrets.toml ->  app_password = "a_tua_senha"
 (enquanto não existir, usa "criatura" — mudar antes de qualquer deploy)
 """
@@ -39,8 +39,10 @@ def check_password() -> bool:
         return True
     st.title("Arquivo Tó Pinheiro da Silva")
     st.caption("Espaço privado da banda")
-    pw = st.text_input("Palavra-passe", type="password")
-    if st.button("Entrar"):
+    with st.form("login"):
+        pw = st.text_input("Palavra-passe", type="password")
+        submitted = st.form_submit_button("Entrar")
+    if submitted:
         try:
             expected = st.secrets["app_password"]
         except Exception:
@@ -157,7 +159,7 @@ elif page == "Evidência":
         st.caption(f"{len(f)} de {len(df)} registos")
         st.dataframe(
             f[["date", "time", "sender", "evidence_status", "primary_section", "original_message"]],
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
 
