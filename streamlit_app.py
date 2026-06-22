@@ -130,6 +130,14 @@ elif page == "Ouvir":
 
 elif page == "Álbuns":
     st.title("Álbuns")
+    st.markdown(
+        "Esta página reúne os **créditos oficiais** dos dois álbuns de estúdio "
+        "da CRIATURA — *Aurora* (2016) e *Bem Bonda* (2021). Em ambos, o Tó foi "
+        "o responsável pela **mistura e masterização**, ou seja, pelo som final "
+        "do disco. Abaixo ficam as fichas completas, com fontes e estado de "
+        "confirmação de cada facto."
+    )
+    st.divider()
     st.markdown(read_md("album_credits_aurora_bem_bonda.md"))
 
 elif page == "Cronologia":
