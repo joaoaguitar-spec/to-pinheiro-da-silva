@@ -31,11 +31,17 @@ CONTENT = Path(__file__).parent / "content"
 def check_password() -> bool:
     if st.session_state.get("auth_ok"):
         return True
-    st.title("Arquivo Tó Pinheiro da Silva")
-    st.caption("Espaço privado da banda")
-    with st.form("login"):
-        pw = st.text_input("Palavra-passe", type="password")
-        submitted = st.form_submit_button("Entrar")
+    # Centrar o login numa coluna estreita ao meio (estética mínima e limpa).
+    left, mid, right = st.columns([1, 1.4, 1])
+    with mid:
+        st.markdown(
+            "<h1 style='text-align:center;margin-bottom:1.5rem;'>"
+            "Arquivo Tó Pinheiro da Silva</h1>",
+            unsafe_allow_html=True,
+        )
+        with st.form("login"):
+            pw = st.text_input("Palavra-passe", type="password")
+            submitted = st.form_submit_button("Entrar", width='stretch')
     if submitted:
         try:
             expected = st.secrets["app_password"]
@@ -45,7 +51,8 @@ def check_password() -> bool:
             st.session_state.auth_ok = True
             st.rerun()
         else:
-            st.error("Palavra-passe incorreta.")
+            with mid:
+                st.error("Palavra-passe incorreta.")
     return False
 
 
@@ -61,38 +68,83 @@ def read_md(name: str) -> str:
     return f"_(falta o ficheiro `content/{name}`)_"
 
 
+@st.cache_data
+def load_discography() -> list[dict]:
+    """Carrega a discografia (Discogs) a partir do ficheiro versionado.
+
+    O ficheiro ``content/discography.json`` é uma cópia deliberada e versionada
+    do output do scraper (que fica fora do Git). As capas usam o ``cover_url``
+    remoto do Discogs, para não ser preciso versionar centenas de imagens.
+    """
+    import json
+
+    p = CONTENT / "discography.json"
+    if not p.exists():
+        return []
+    return json.loads(p.read_text(encoding="utf-8"))
+
+
+PAGES = ["Início", "Ouvir", "Álbuns", "Cronologia", "Memórias"]
+
+
+def go_to(target: str) -> None:
+    """Callback de navegação (usado nos botões do Início).
+
+    Tem de correr como ``on_click`` — só dentro de um callback é permitido
+    alterar o valor de um widget já instanciado (a radio tem ``key="nav"``).
+    Fazê-lo no corpo do script levantaria ``StreamlitAPIException``.
+    """
+    st.session_state.nav = target
+
+
 # ---------- navegação ----------
 st.sidebar.title("Arquivo Tó")
 st.sidebar.caption("Engenheiro de som · CRIATURA")
-page = st.sidebar.radio(
-    "Navegar",
-    ["Início", "Ouvir", "Álbuns", "Cronologia", "Memórias"],
-)
+if "nav" not in st.session_state:
+    st.session_state.nav = "Início"
+page = st.sidebar.radio("Navegar", PAGES, key="nav")
 
 
 # ---------- páginas ----------
 if page == "Início":
     st.title("Tó Pinheiro da Silva")
-    st.caption("Engenheiro de som · CRIATURA")
     st.markdown(
         "O Tó — **António Pinheiro da Silva** — é o engenheiro de som que "
-        "**misturou e masterizou** os dois álbuns da CRIATURA: *Aurora* (2016) "
-        "e *Bem Bonda* (2021). É uma das figuras mais importantes da produção "
-        "discográfica portuguesa, com mais de 150 discos gravados ao longo de "
-        "décadas. Este arquivo é um **tributo em vida** — a memória do que a "
-        "banda viveu e aprendeu com ele."
+        "**misturou e masterizou** os dois álbuns da CRIATURA. Este arquivo é um "
+        "**tributo em vida** à sua obra e ao que a banda viveu com ele."
     )
-    st.info(
-        "📺 **Arquivo RTP — 1989**\n\n"
-        "Em Junho de 1989, Tó Pinheiro da Silva apareceu no programa "
-        "*Haja Música — Parte II* (RTP 2), ao lado de Pedro Ayres Magalhães, "
-        "falando sobre António Variações. É um dos únicos registos audiovisuais "
-        "conhecidos de Tó em câmara.\n\n"
-        "👉 [Ver no Arquivo RTP](https://arquivos.rtp.pt/conteudos/haja-musica-parte-ii-2/)\n"
-        "*(O vídeo abre em nova aba — não pode ser incorporado por direitos de autor RTP.)*"
+
+    # ----- Estatísticas (dados Discogs) -----
+    st.markdown(
+        """
+        <div style='display:flex;gap:2.5rem;flex-wrap:wrap;margin:1.5rem 0 0.5rem;'>
+          <div>
+            <div style='font-size:3rem;font-weight:800;line-height:1;'>353</div>
+            <div style='opacity:0.7;'>créditos</div>
+          </div>
+          <div>
+            <div style='font-size:3rem;font-weight:800;line-height:1;'>277</div>
+            <div style='opacity:0.7;'>discos</div>
+          </div>
+          <div>
+            <div style='font-size:3rem;font-weight:800;line-height:1;'>1976–2025</div>
+            <div style='opacity:0.7;'>quase 50 anos</div>
+          </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
+    st.caption("Fonte: Discogs · perfil de António Pinheiro da Silva")
+
     st.divider()
-    st.markdown(read_md("to_pinheiro_biografia_e_obra.md"))
+
+    # ----- Links para as outras páginas -----
+    st.markdown("#### Explorar o arquivo")
+    c1, c2, c3, c4 = st.columns(4)
+    c1.button("🎧 Ouvir", width="stretch", on_click=go_to, args=("Ouvir",))
+    c2.button("💿 Álbuns", width="stretch", on_click=go_to, args=("Álbuns",))
+    c3.button("🗓️ Cronologia", width="stretch", on_click=go_to, args=("Cronologia",))
+    c4.button("📝 Memórias", width="stretch", on_click=go_to, args=("Memórias",))
 
 elif page == "Ouvir":
     st.title("Ouvir")
@@ -120,14 +172,66 @@ elif page == "Ouvir":
 elif page == "Álbuns":
     st.title("Álbuns")
     st.markdown(
-        "Esta página reúne os **créditos oficiais** dos dois álbuns de estúdio "
-        "da CRIATURA — *Aurora* (2016) e *Bem Bonda* (2021). Em ambos, o Tó foi "
-        "o responsável pela **mistura e masterização**, ou seja, pelo som final "
-        "do disco. Abaixo ficam as fichas completas, com fontes e estado de "
-        "confirmação de cada facto."
+        "A discografia do Tó tal como documentada no **Discogs** — quase 50 anos "
+        "de trabalho, de 1976 a 2025. Cada ficha indica o **papel** dele no disco "
+        "(participação, mistura, produção) e liga à página do Discogs."
     )
-    st.divider()
-    st.markdown(read_md("album_credits_aurora_bem_bonda.md"))
+
+    # Créditos curados dos dois álbuns da CRIATURA (preservados num expander).
+    with st.expander("💿 Créditos detalhados — Aurora & Bem Bonda (CRIATURA)"):
+        st.markdown(read_md("album_credits_aurora_bem_bonda.md"))
+
+    discography = load_discography()
+    if not discography:
+        st.warning("Discografia indisponível (falta `content/discography.json`).")
+    else:
+        # ----- Filtros: década e papel -----
+        def decade_of(year) -> str:
+            if not isinstance(year, int) or year <= 0:
+                return "Sem data"
+            return f"{(year // 10) * 10}s"
+
+        decades = sorted(
+            {decade_of(r.get("year")) for r in discography},
+            key=lambda d: (d == "Sem data", d),
+        )
+        roles = sorted({r.get("role") for r in discography if r.get("role")})
+
+        col_d, col_r = st.columns(2)
+        sel_decade = col_d.selectbox("Década", ["Todas"] + decades)
+        sel_role = col_r.selectbox("Papel", ["Todos"] + roles)
+
+        filtered = [
+            r
+            for r in discography
+            if (sel_decade == "Todas" or decade_of(r.get("year")) == sel_decade)
+            and (sel_role == "Todos" or r.get("role") == sel_role)
+        ]
+        # Mais recentes primeiro; sem data no fim.
+        filtered.sort(key=lambda r: (r.get("year") or 0), reverse=True)
+
+        st.caption(f"{len(filtered)} de {len(discography)} registos")
+        st.divider()
+
+        # ----- Grelha (4 por linha) -----
+        PER_ROW = 4
+        for i in range(0, len(filtered), PER_ROW):
+            cols = st.columns(PER_ROW)
+            for col, rec in zip(cols, filtered[i : i + PER_ROW]):
+                with col:
+                    cover = rec.get("cover_url")
+                    if cover:
+                        st.image(cover, width='stretch')
+                    title = rec.get("title") or "—"
+                    url = rec.get("discogs_url")
+                    if url:
+                        st.markdown(f"**[{title}]({url})**")
+                    else:
+                        st.markdown(f"**{title}**")
+                    st.caption(
+                        f"{rec.get('artist') or '—'}  \n"
+                        f"{rec.get('year') or 's/d'} · {rec.get('role') or '—'}"
+                    )
 
 elif page == "Cronologia":
     st.title("Cronologia")
@@ -211,7 +315,7 @@ elif page == "Memórias":
                     "when": meta.get("Quando", ""),
                     "privacy": meta.get("Privacidade", ""),
                     "added": meta.get("Adicionado em", ""),
-                    "photo_note": meta.get("Nota fotográfica", ""),
+                    "quote": meta.get("Citação", ""),
                     "story": story,
                 }
             )
@@ -246,8 +350,8 @@ elif page == "Memórias":
             st.markdown(pill, unsafe_allow_html=True)
             if mem["story"]:
                 st.markdown(mem["story"])
-            if mem["photo_note"]:
-                st.caption(f"📷 {mem['photo_note']}")
+            if mem["quote"]:
+                st.markdown(f"> *{mem['quote']}*")
             st.divider()
 
     # ----- Secção 2 — adicionar uma memória -----
@@ -260,6 +364,9 @@ elif page == "Memórias":
         story = st.text_area(
             "Conta o momento (em português, na tua língua natural)"
         )
+        quote = st.text_input(
+            "Citação (opcional) — uma frase do Tó ou sobre o Tó"
+        )
         privacy = st.selectbox(
             "Nível de privacidade",
             [
@@ -267,9 +374,6 @@ elif page == "Memórias":
                 "Privado",
                 "Público",
             ],
-        )
-        photo_note = st.text_input(
-            "Tens uma foto associada? (descreve-a ou deixa em branco)"
         )
         submitted = st.form_submit_button("Guardar memória")
 
@@ -296,8 +400,8 @@ elif page == "Memórias":
                 f"**Privacidade:** {privacy}\n"
                 f"**Adicionado em:** {date.today().isoformat()}\n"
             )
-            if photo_note.strip():
-                block += f"**Nota fotográfica:** {photo_note.strip()}\n"
+            if quote.strip():
+                block += f"**Citação:** {quote.strip()}\n"
             block += f"\n{story.strip()}\n\n---\n\n"
 
             path = CONTENT / MEMORIES_FILE
