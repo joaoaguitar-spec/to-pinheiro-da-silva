@@ -160,6 +160,151 @@ elif page == "Cronologia":
     st.info("A enriquecer com datas da base de evidência.")
 
 elif page == "Memórias":
+    MEMORIES_FILE = "to_pinheiro_manual_memories.md"
+
+    PRIVACY_COLORS = {
+        "Público": "#27ae60",
+        "Banda": "#f39c12",
+        "Privado": "#c0392b",
+    }
+
+    def parse_memories(text: str) -> list[dict]:
+        """Extract real memory entries from the manual memories markdown.
+
+        A ``##`` block only counts as a memory if it contains BOTH the
+        ``**Quem:**`` and ``**Privacidade:**`` metadata lines. This keeps the
+        template scaffolding (## Como usar, ## Categorias, ## EXEMPLO, etc.)
+        from being rendered as memory cards — none of those carry that
+        metadata, so a template-only file parses to zero memories.
+        """
+        memories: list[dict] = []
+        # Split on level-2 headings ("## ..."); keep heading text via lookahead.
+        import re
+
+        blocks = re.split(r"(?m)^##\s+", text)
+        for block in blocks:
+            if not block.strip():
+                continue
+            lines = block.splitlines()
+            title = lines[0].strip()
+            body_lines = lines[1:]
+            meta: dict[str, str] = {}
+            story_lines: list[str] = []
+            for raw in body_lines:
+                line = raw.strip()
+                m = re.match(r"^\*\*(.+?):\*\*\s*(.*)$", line)
+                if m:
+                    meta[m.group(1).strip()] = m.group(2).strip()
+                    continue
+                # Stop the story at a horizontal rule terminating the block.
+                if line == "---":
+                    break
+                story_lines.append(raw)
+            # Only a real memory if it has the required metadata.
+            if "Quem" not in meta or "Privacidade" not in meta:
+                continue
+            story = "\n".join(story_lines).strip()
+            memories.append(
+                {
+                    "title": title,
+                    "author": meta.get("Quem", ""),
+                    "when": meta.get("Quando", ""),
+                    "privacy": meta.get("Privacidade", ""),
+                    "added": meta.get("Adicionado em", ""),
+                    "photo_note": meta.get("Nota fotográfica", ""),
+                    "story": story,
+                }
+            )
+        return memories
+
     st.title("Memórias")
-    st.write("Histórias e fotos da banda. (O formulário para adicionar entra na versão completa.)")
-    st.markdown(read_md("to_pinheiro_manual_memories.md"))
+    st.caption(
+        "Histórias, momentos e recordações sobre o Tó — escritas por quem esteve lá."
+    )
+
+    # ----- Secção 1 — memórias existentes -----
+    memories = parse_memories(read_md(MEMORIES_FILE))
+
+    if not memories:
+        st.info(
+            "Ainda não há memórias adicionadas.\n\n"
+            "Usa o formulário abaixo para adicionar a primeira."
+        )
+    else:
+        for mem in memories:
+            color = PRIVACY_COLORS.get(mem["privacy"], "#7f8c8d")
+            pill = (
+                f"<span style='background-color:{color};color:#ffffff;"
+                "padding:2px 10px;border-radius:12px;font-size:0.75rem;"
+                f"font-weight:600;'>{mem['privacy']}</span>"
+            )
+            st.markdown(f"### {mem['title']}")
+            subline = f"Por {mem['author']}"
+            if mem["when"]:
+                subline += f" · {mem['when']}"
+            st.caption(subline)
+            st.markdown(pill, unsafe_allow_html=True)
+            if mem["story"]:
+                st.markdown(mem["story"])
+            if mem["photo_note"]:
+                st.caption(f"📷 {mem['photo_note']}")
+            st.divider()
+
+    # ----- Secção 2 — adicionar uma memória -----
+    st.subheader("Adicionar uma memória")
+
+    with st.form("add_memory", clear_on_submit=True):
+        title = st.text_input("Título da memória")
+        author = st.text_input("O teu nome (ou iniciais)")
+        when = st.text_input("Quando foi? (data, período, ou época aproximada)")
+        story = st.text_area(
+            "Conta o momento (em português, na tua língua natural)"
+        )
+        privacy = st.selectbox(
+            "Nível de privacidade",
+            [
+                "Banda",
+                "Privado",
+                "Público",
+            ],
+        )
+        photo_note = st.text_input(
+            "Tens uma foto associada? (descreve-a ou deixa em branco)"
+        )
+        submitted = st.form_submit_button("Guardar memória")
+
+    if submitted:
+        errors = []
+        if not title.strip():
+            errors.append("O título não pode ficar em branco.")
+        if not author.strip():
+            errors.append("O teu nome não pode ficar em branco.")
+        if len(story.strip()) < 20:
+            errors.append("A memória tem de ter pelo menos 20 caracteres.")
+
+        if errors:
+            for err in errors:
+                st.error(err)
+        else:
+            from datetime import date
+
+            when_value = when.strip() if when.strip() else "Não especificado"
+            block = (
+                f"## {title.strip()}\n\n"
+                f"**Quem:** {author.strip()}\n"
+                f"**Quando:** {when_value}\n"
+                f"**Privacidade:** {privacy}\n"
+                f"**Adicionado em:** {date.today().isoformat()}\n"
+            )
+            if photo_note.strip():
+                block += f"**Nota fotográfica:** {photo_note.strip()}\n"
+            block += f"\n{story.strip()}\n\n---\n\n"
+
+            path = CONTENT / MEMORIES_FILE
+            with path.open("a", encoding="utf-8") as f:
+                f.write(block)
+
+            st.success(
+                "✅ Memória guardada. Obrigado por contribuíres para o arquivo."
+            )
+            st.rerun()
