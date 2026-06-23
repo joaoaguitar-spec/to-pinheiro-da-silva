@@ -18,15 +18,9 @@ Palavra-passe: definir em .streamlit/secrets.toml ->  app_password = "Batman"
 """
 
 from pathlib import Path
-import json
 
 import streamlit as st
 import streamlit.components.v1 as components
-
-try:
-    import pandas as pd
-except Exception:
-    pd = None
 
 st.set_page_config(page_title="Arquivo Tó Pinheiro da Silva", layout="wide")
 
@@ -67,26 +61,12 @@ def read_md(name: str) -> str:
     return f"_(falta o ficheiro `content/{name}`)_"
 
 
-def load_jsonl(name: str) -> list:
-    p = CONTENT / name
-    out = []
-    if p.exists():
-        for line in p.read_text(encoding="utf-8").splitlines():
-            line = line.strip()
-            if line:
-                out.append(json.loads(line))
-    return out
-
-
-EVIDENCE_FILE = "to_pinheiro_da_silva_criatura_evidence.jsonl"
-
-
 # ---------- navegação ----------
 st.sidebar.title("Arquivo Tó")
 st.sidebar.caption("Engenheiro de som · CRIATURA")
 page = st.sidebar.radio(
     "Navegar",
-    ["Início", "Ouvir", "Álbuns", "Cronologia", "Evidência", "Memórias", "Validação"],
+    ["Início", "Ouvir", "Álbuns", "Cronologia", "Memórias"],
 )
 
 
@@ -161,65 +141,7 @@ elif page == "Cronologia":
         st.markdown(f"**{when}** — {what}")
     st.info("A enriquecer com datas da base de evidência.")
 
-elif page == "Evidência":
-    st.title("Evidência")
-    st.markdown(
-        "Esta página reúne os **207 registos de prova** extraídos do grupo de "
-        "WhatsApp da banda, onde se documenta o trabalho com o Tó. Podem "
-        "**pesquisar por palavra-chave** e **filtrar** por secção, estado de "
-        "confirmação e autor. Cada registo preserva a mensagem original."
-    )
-    st.divider()
-    records = load_jsonl(EVIDENCE_FILE)
-    if not records:
-        st.warning(f"falta `content/{EVIDENCE_FILE}`")
-    elif pd is None:
-        st.error("instalar pandas (ver requirements.txt)")
-    else:
-        df = pd.DataFrame(records)
-        q = st.text_input("Procurar na mensagem")
-        c1, c2, c3 = st.columns(3)
-        sec = c1.selectbox("Secção", ["(todas)"] + sorted(df["primary_section"].dropna().unique()))
-        stt = c2.selectbox("Estado", ["(todos)"] + sorted(df["evidence_status"].dropna().unique()))
-        snd = c3.selectbox("Autor", ["(todos)"] + sorted(df["sender"].dropna().unique()))
-
-        f = df
-        if q:
-            f = f[f["original_message"].str.contains(q, case=False, na=False)]
-        if sec != "(todas)":
-            f = f[f["primary_section"] == sec]
-        if stt != "(todos)":
-            f = f[f["evidence_status"] == stt]
-        if snd != "(todos)":
-            f = f[f["sender"] == snd]
-
-        st.caption(f"{len(f)} de {len(df)} registos")
-        st.dataframe(
-            f[["date", "time", "sender", "evidence_status", "primary_section", "original_message"]],
-            width="stretch",
-            hide_index=True,
-        )
-
 elif page == "Memórias":
     st.title("Memórias")
     st.write("Histórias e fotos da banda. (O formulário para adicionar entra na versão completa.)")
     st.markdown(read_md("to_pinheiro_manual_memories.md"))
-
-elif page == "Validação":
-    st.title("Validação — privado")
-    st.write("Os registos por confirmar. Marcar e, na versão completa, guardar a decisão.")
-    records = load_jsonl(EVIDENCE_FILE)
-    vq = [r for r in records if r.get("evidence_status") in ("To Confirm", "Probable / To Confirm")]
-    st.caption(f"{len(vq)} registos por validar")
-    for r in vq:
-        with st.expander(f"{r.get('evidence_id','?')} — {r.get('date','')} — {r.get('sender','')}"):
-            st.code(r.get("original_message", ""))
-            if r.get("analytical_note"):
-                st.caption(r["analytical_note"])
-            st.radio(
-                "Decisão",
-                ["(por decidir)", "Confirmado", "Não é o Tó", "Precisa de contexto"],
-                key=f"dec_{r.get('evidence_id')}",
-                horizontal=True,
-            )
-    st.info("As decisões serão persistidas na versão completa (Claude Code).")
