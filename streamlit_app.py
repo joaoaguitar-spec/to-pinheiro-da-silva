@@ -107,6 +107,11 @@ if "nav" not in st.session_state:
     st.session_state.nav = "Início"
 page = st.sidebar.radio("Navegar", PAGES, key="nav")
 
+st.sidebar.divider()
+if st.sidebar.button("Sair", width="stretch"):
+    st.session_state.auth_ok = False
+    st.rerun()
+
 
 # ---------- páginas ----------
 if page == "Início":
