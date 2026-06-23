@@ -1,0 +1,14 @@
+# Discogs scraper — local outputs (never commit)
+discography_covers/
+to_pinheiro_discography.json
+to_pinheiro_discography.csv
+to_pinheiro_discography_summary.txt
+to_pinheiro_discography.html
+failed_covers.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Streamlit secrets (may contain the app password / tokens)
+.streamlit/secrets.toml
