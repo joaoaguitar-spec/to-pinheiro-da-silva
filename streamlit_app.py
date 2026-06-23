@@ -162,74 +162,19 @@ if page == "Início":
     c4.button("📝 Memórias", width="stretch", on_click=go_to, args=("Memórias",))
 
 elif page == "Ouvir":
-    st.title("Ouvir")
-    st.caption("Os dois álbuns que o Tó misturou e masterizou")
-    st.markdown(
-        "Aqui ficam os **dois álbuns da CRIATURA** em que o Tó assinou a "
-        "**mistura e a masterização**: *Aurora* (2016) e *Bem Bonda* (2021). "
-        "São o testemunho sonoro do trabalho que a banda fez com ele — podem "
-        "ouvi-los na íntegra a partir do Bandcamp, aqui mesmo."
-    )
-    st.divider()
-    st.subheader("Aurora (2016)")
-    components.iframe(
-        "https://bandcamp.com/EmbeddedPlayer/album=1417799381/size=large/"
-        "bgcol=ffffff/linkcol=0687f5/tracklist=true/transparent=true/",
-        height=472,
-    )
-    st.subheader("Bem Bonda (2021)")
-    components.iframe(
-        "https://bandcamp.com/EmbeddedPlayer/album=4156733895/size=large/"
-        "bgcol=ffffff/linkcol=0687f5/tracklist=true/transparent=true/",
-        height=472,
-    )
-
-    # ----- Outros álbuns com a marca de Tó Pinheiro da Silva (Spotify) -----
-    st.divider()
-    st.subheader("Outros álbuns com a marca de Tó Pinheiro da Silva")
-    st.markdown(
-        "Uma seleção de álbuns que passaram pelas mãos do Tó — misturados, "
-        "masterizados ou produzidos por ele. Ordenados cronologicamente."
-    )
-
-    # (artista, álbum, ano, papel, spotify_album_id)
-    # NOTA: o mini-LP original "Estou De Passagem" (UHF, 1982) não existe como
-    # álbum autónomo no Spotify; usa-se a compilação "O Melhor de 300 Canções",
-    # que inclui a faixa.
-    spotify_albums = [
-        ("Banda Do Casaco", "Hoje Há Conquilhas Amanhã Não Sabemos", "1977",
-         "Membro da banda", "1W3AHzbTQDntDiwwtDK1En"),
-        ("UHF", "Estou De Passagem", "1982",
-         "Mistura · via compilação «O Melhor de 300 Canções»",
-         "1NhQCFk9rOA71KT6YmZY9v"),
-        ("António Variações", "Dar & Receber [Restaurado]", "1984/2000",
-         "Participação", "1C7LQUX1WqA5RDJuSkhvRw"),
-        ("GNR", "Os Homens Não Se Querem Bonitos", "1985",
-         "Mistura", "79WoroF6WDvMXN93zyYrVB"),
-        ("Jorge Palma", "Bairro Do Amor", "1989",
-         "Produção · mistura", "3JowKnCpS9URNgmxBVTnC6"),
-        ("Madredeus", "Existir", "1990",
-         "Produção · mistura", "5SzQnS0MjTnTH187aHNtnA"),
-        ("Camané", "Na Linha Da Vida", "1998",
-         "Mistura", "5x7vCaFLlhIf6g9NCSIK4m"),
-        ("Dulce Pontes", "O Primeiro Canto", "1999",
-         "Produção · mistura", "637OSidFKVySDROx4ixc3A"),
-    ]
-
-    for artist, album, year, role, album_id in spotify_albums:
-        st.markdown(
-            f"**{artist}**  \n*{album}* · {year} · {role}"
-        )
+    # A página Ouvir é renderizada como um único bloco HTML (grelha de 3
+    # colunas, cartões uniformes, tema escuro). O ficheiro versionado
+    # ``ouvir_standalone.html`` é a fonte de verdade para o layout, o estilo e
+    # os URLs dos embeds (2 Bandcamp + 8 Spotify, todos a 352px).
+    ouvir_html_path = Path(__file__).parent / "ouvir_standalone.html"
+    if ouvir_html_path.exists():
         components.html(
-            '<iframe style="border-radius:12px" '
-            f'src="https://open.spotify.com/embed/album/{album_id}'
-            '?utm_source=generator&theme=0" width="100%" height="352" '
-            'frameBorder="0" allowfullscreen="" '
-            'allow="autoplay; clipboard-write; encrypted-media; fullscreen; '
-            'picture-in-picture" loading="lazy"></iframe>',
-            height=352,
+            ouvir_html_path.read_text(encoding="utf-8"),
+            height=2400,
+            scrolling=True,
         )
-        st.markdown("---")
+    else:
+        st.warning("Layout indisponível (falta `ouvir_standalone.html`).")
 
 elif page == "Álbuns":
     st.title("Álbuns")
