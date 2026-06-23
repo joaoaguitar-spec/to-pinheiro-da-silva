@@ -138,8 +138,8 @@ if page == "Início":
             <div style='opacity:0.7;'>créditos</div>
           </div>
           <div>
-            <div style='font-size:3rem;font-weight:800;line-height:1;'>277</div>
-            <div style='opacity:0.7;'>discos</div>
+            <div style='font-size:3rem;font-weight:800;line-height:1;'>168</div>
+            <div style='opacity:0.7;'>artistas</div>
           </div>
           <div>
             <div style='font-size:3rem;font-weight:800;line-height:1;'>1976–2025</div>
@@ -150,6 +150,9 @@ if page == "Início":
         unsafe_allow_html=True,
     )
     st.caption("Fonte: Discogs · perfil de António Pinheiro da Silva")
+
+    # ----- Biografia (percurso, cronologia, citações) -----
+    st.markdown(read_md("to_pinheiro_biografia_e_obra.md"))
 
     st.divider()
 

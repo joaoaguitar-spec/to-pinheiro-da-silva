@@ -1,132 +1,232 @@
-# Créditos dos Álbuns — CRIATURA / Tó Pinheiro da Silva
+# CRIATURA — Créditos Oficiais
+## Aurora (2016) e Bem Bonda (2021)
 
-**Projeto:** Arquivo de Memória CRIATURA — Tó Pinheiro da Silva
-**Documento:** Ficha de créditos oficiais (fonte separada da prova do WhatsApp)
-**Data:** 2026-06-22
-**Idioma:** Português de Portugal. Linhas de crédito originais preservadas tal e qual.
-
----
-
-## Legenda de estados
-
-- **[CONFIRMADO]** — facto sustentado por fonte oficial ou pela ficha técnica do disco.
-- **[INFERÊNCIA]** — leitura razoável a partir das fontes, identificada como tal.
-- **[A CONFIRMAR]** — plausível mas ainda sem fonte recolhida.
-
-Cada afirmação indica a **Fonte**. Hierarquia usada: facto confirmado pelo utilizador > ficheiros oficiais/curados > base de conhecimento > JSONL > export do WhatsApp > informação externa pública (Bandcamp, Discogs, Tradisom).
+**Última atualização:** 2026-06-23  
+**Fontes:** Bandcamp oficial CRIATURA, Rimas e Batidas, Discogs, WhatsApp (extraído)  
+**Estado:** Créditos verificados via fontes públicas. Pormenores de sessão baseados em evidência interna.
 
 ---
 
-## Resumo (a frase central)
+## Aurora (2016)
 
-**[CONFIRMADO]** O Tó (Tó Pinheiro da Silva / António Pinheiro da Silva) **misturou e masterizou os dois álbuns de estúdio da CRIATURA**: *Aurora* (2016) e *Bem Bonda* (2021). Foi o responsável pela mistura e masterização — isto é, pelo som final — de ambos.
+### Informação geral
 
-**[CONFIRMADO] Identidade / alias:** *Tó Pinheiro da Silva* = *António Pinheiro da Silva*.
-**Fonte:** a *Aurora* credita-o como «Tó Pinheiro da Silva» (Bandcamp); a ficha técnica do *Bem Bonda* credita-o como «António Pinheiro da Silva» (partilhada no chat a 10/12/2020). Mesmo papel (mistura + masterização), mesmo apelido, mesma banda.
+| Campo | Detalhe |
+| --- | --- |
+| **Título** | Aurora |
+| **Artista** | Criatura |
+| **Ano** | 2016 |
+| **Editora / Distribuição** | Tradisom Produções Culturais |
+| **Formato** | Digital (Bandcamp, Spotify, plataformas de streaming) |
+| **Período de gravação** | 2014–2015 |
+| **Locais de gravação** | Musibéria, Kimahera, Quarto ao Lado |
+| **Género** | Folk, World, & Country (classificação Discogs) |
+| **Bandcamp** | https://criaturapt.bandcamp.com/album/aurora |
+| **Bandcamp Album ID** | 1417799381 |
 
-**[CONFIRMADO] Coincidência de datas:** *Aurora* e *Bem Bonda* foram ambos lançados a **5 de fevereiro** (2016 e 2021).
+### Crédito de engenharia de som
 
----
+> **Misturado e masterizado por Tó Pinheiro da Silva**
 
-## 1. AURORA (2016)
+Fonte: Página oficial do Bandcamp da CRIATURA (S05)  
+Confiança: **Alta**
 
-- **Estado:** Álbum de estreia.
-- **Lançamento:** 5 de fevereiro de 2016. **[CONFIRMADO]**
-  - *Fonte:* Bandcamp oficial — https://criaturapt.bandcamp.com/album/aurora
-- **Papel do Tó:** linha de crédito original →
-  > **Misturado e masterizado por Tó Pinheiro da Silva**
-  **[CONFIRMADO]**
-  - *Fonte:* Bandcamp oficial da CRIATURA e Bandcamp do Gil Dionísio (https://gildionsio.bandcamp.com/album/aurora-2016); corroborado por Discogs (https://www.discogs.com/release/16977027-Criatura-Aurora) e Tradisom (https://tradisom.com/en/product/criatura/).
-- **Gravação:** «Gravado entre 2014 e 2015 em Musibéria / Kimahera / Quarto ao Lado». **[CONFIRMADO]** — *Fonte:* Bandcamp.
-- **Produção:** «Produzido por Edgar Valente e co-produzido por Paulo Lourenço». **[CONFIRMADO]** — *Fonte:* Bandcamp.
-- **Artwork:** Duck.production. **[CONFIRMADO]** — *Fonte:* Bandcamp.
-- **Distribuição:** Tradisom Produções Culturais. **[CONFIRMADO]** — *Fonte:* Bandcamp / Tradisom.
-- **Participação:** Grupo Coral e Etnográfico da Casa do Povo de Serpa (Cante Alentejano). **[CONFIRMADO]** — *Fonte:* Tradisom.
-- **Alinhamento (8 faixas):** 1. A Primeira · 2. Filhe · 3. Pastor Sem Cajado · 4. Aurora · 5. Moda Nova · 6. Menina da Paz · 7. Tempo · 8. Algaraviada. **[CONFIRMADO]** — *Fonte:* Bandcamp.
-- **Músicos (tal como creditados na Aurora):** **[CONFIRMADO]** — *Fonte:* Bandcamp («credits»).
-  - Edgar Valente (voz, teclados)
-  - João Aguiar (guitarra eléctrica)
-  - Paulo Lourenço (baixo eléctrico)
-  - Gil Dionísio (voz, violino e experimentalismos)
-  - Fabio Cantinho (bateria e percussão electrónica)
-  - Acácio Barbosa (guitarra portuguesa, cavaquinho)
-  - Eloísa d'Ascensão (voz e percussões tradicionais)
-  - Yaw Tembe / Claudio Gomes (trompete e instrumentos de percussão)
-  - Alexandre Bernardo (guitarra acústica, cavaquinho e bandolim)
-  - Iuri Oliveira (percussões tradicionais portuguesas e do resto do mundo)
-  - Ricardo Coelho (aerofones tradicionais, flauta transversal e percussões tradicionais)
-  - *(Grafias preservadas tal como no Bandcamp da Aurora — p. ex. «Fabio», «Iuri», «Claudio» sem acento nesta edição.)*
+### Alinhamento
 
-**Nota — porque é que o WhatsApp não tinha prova da Aurora:** o grupo de WhatsApp foi criado a 7 de março de 2018, mais de dois anos depois da gravação (2014-2015) e do lançamento (fev. 2016). A ausência de prova no chat é **estrutural**, não uma dúvida sobre o envolvimento. A confirmação vem de fonte externa oficial.
+1. A Primeira
+2. Filhe
+3. Pastor Sem Cajado
+4. Aurora
+5. Moda Nova
+6. Menina da Paz
+7. Tempo
+8. Algaraviada
 
----
+### Músicos
 
-## 2. BEM BONDA (2021)
+- Edgar Valente — voz, teclados
+- João Aguiar — guitarra elétrica
+- Paulo Lourenço — baixo elétrico
+- Gil Dionísio — voz, violino e experimentalismos
+- Fábio Cantinho — bateria e percussão eletrónica
+- Acácio Barbosa — guitarra portuguesa, cavaquinho
+- Eloísa d'Ascensão — voz e percussões tradicionais
+- Yaw Tembe / Cláudio Gomes — trompete e instrumentos de percussão
+- Alexandre Bernardo — guitarra acústica, cavaquinho e bandolim
+- Iúri Oliveira — percussões tradicionais portuguesas e do resto do mundo
+- Ricardo Coelho — aerofones tradicionais, flauta transversal e percussões tradicionais
 
-- **Estado:** Segundo álbum.
-- **Lançamento:** 5 de fevereiro de 2021 — mesmo dia, 5 anos depois da *Aurora*. **[CONFIRMADO]**
-  - *Fonte:* Bandcamp oficial — https://criaturapt.bandcamp.com/album/bem-bonda
-- **Papel do Tó:** linha de crédito original →
-  > **Misturado e masterizado por: António Pinheiro da Silva**
-  **[CONFIRMADO]**
-  - *Fonte:* ficha técnica completa do disco, **partilhada no próprio chat do WhatsApp a 10/12/2020** (export, ~linha 20750), **e** créditos oficiais do Bandcamp. Dupla fonte (oficial + interna) — a evidência mais sólida do arquivo.
-- **Gravação:** «Gravado entre Março 2019 e Outubro de 2020 nos estúdios Namouche, Haus e Camaleão». **[CONFIRMADO]** — *Fonte:* ficha técnica (chat) + Bandcamp.
-- **Engenheiros de gravação:** Paulo Lourenço, Bernardo Pastor, Quim Monte, Pedro Ferreira e Francisco Duque. **[CONFIRMADO]** — *Fonte:* ficha técnica (chat) + Bandcamp.
-- **Produção:** Produzido por Paulo Lourenço, Edgar Valente e Gil Dionísio. **[CONFIRMADO]** — *Fonte:* ficha técnica (chat) + Bandcamp.
-- **Participações especiais:** Yaw Tembe (trompete; antigo membro do grupo); Coro dos Anjos (do bairro dos Anjos, em Lisboa) — nas faixas *Anunciação*, *Bem Bonda*, *O Padeiro - Parte II* e *A Noiva*. **[CONFIRMADO]** — *Fonte:* ficha técnica (chat) + Bandcamp.
-- **Artwork:** Catherina Cardoso, João Catarino e Diogo Vaz Cavaleiro. **[CONFIRMADO]** — *Fonte:* Bandcamp (a ficha do chat listava apenas Catherina Cardoso e João Catarino).
-- **Edição/distribuição:** Omnichord Records, com apoio da Fundação GDA e da Câmara Municipal do Fundão. **[CONFIRMADO]** — *Fonte:* ficha técnica (chat) + Bandcamp.
-- **a Criatura (formação):** Acácio Barbosa (guitarra portuguesa) · Alexandre Bernardo (bandolim, guitarra acústica, cavaquinho) · Cláudio Gomes (trompete) · Edgar Valente (voz, piano, teclados, adufe) · Fábio Cantinho (bateria) · Gil Dionísio (voz, violino) · Iúri Oliveira (percussões, Mbira) · João Aguiar (guitarra eléctrica) · Paulo Lourenço (baixo eléctrico) · Ricardo Coelho (gaita de foles, flauta transversal, ocarina, palheta beiroa). **[CONFIRMADO]** — *Fonte:* Bandcamp.
-- **Coro dos Anjos (lista canónica Bandcamp):** Anaïs Thinon, André Morais, Andrea Vertessen, Anne Sealand, António Rivotti, Beatriz Nande, Bruno Mimoso, Catarina Monteiro, Daniel Vasconcelos Melim, Diogo Vaz Cavaleiro, Dora Vicente, Gabriel Pepe, Irene Miranda, Joana Veiga, José Eduardo Amadeu, Katsiaryna Drozhzha, Hugo Santos, Mafalda Carvalho, Maria Henriques, Miguel Proença, Pedro Delgado, Rita Caldeira, Sara Mercier, Teresa Conceição, Tiago Jesus, Vasco Ribeiro, Yuri Wentink. **[CONFIRMADO]** — *Fonte:* Bandcamp.
-- **Alinhamento (11 faixas):** 1. Anunciação · 2. Bem Bonda · 3. Lobbysómem · 4. A Festa do Medo do Gaiteiro · 5. Da Praxe · 6. O Padeiro - Parte 1 · 7. O Padeiro - Parte 2 · 8. O Namoro · 9. A Noiva · 10. O Encanto · 11. À Mãe. **[CONFIRMADO]** — *Fonte:* Bandcamp.
+**Participação especial:** Grupo Coral e Etnográfico da Casa do Povo de Serpa (Cante Alentejano)
 
-**Cronologia da produção (a partir do WhatsApp — com datas):** **[CONFIRMADO]**
-- **08/10/2020** — a banda fecha com o Tó as misturas para o período de **30 de outubro a 5 de novembro de 2020**.
-- Objetivo de ter o disco **masterizado pelo Tó Pinheiro da Silva a 6 de novembro de 2020**, para tentar sair ainda em 2020.
-- **05/02/2021** — lançamento efetivo, alinhado com o aniversário da *Aurora*.
-- *(As mensagens originais em português devem ser citadas tal e qual quando usadas como prova; ver knowledge base / JSONL.)*
+**Produção:** Produzido por Edgar Valente e co-produzido por Paulo Lourenço  
+**Distribuição:** Tradisom Produções Culturais
 
-**Nota de proveniência (não relativa ao Tó):** a lista do Coro dos Anjos partilhada no chat (dez. 2020) difere ligeiramente da versão final do Bandcamp (alguns nomes diferentes/adicionais). Para a ficha canónica do Coro, usar a versão do Bandcamp (acima).
+### Notas sobre o trabalho do Tó
+
+- Evidência direta de WhatsApp para Aurora **não foi encontrada** na extração (o grupo foi criado em março de 2018, após a gravação de 2014–15 e lançamento de fev. 2016). Isto é uma lacuna documental, não uma lacuna de crédito.
+- O crédito público (Bandcamp S05) confirma inequivocamente a mistura e masterização por Tó Pinheiro da Silva.
+- Primeiro crédito confirmado da colaboração Tó–CRIATURA em fontes públicas.
 
 ---
 
-## 3. LABUTA
+## Bem Bonda (2021)
 
-- **Estado:** **Ainda não editado.** Não é um single publicado. O que existe é um **vídeo no YouTube com a banda a tocar o tema ao vivo**. O 3.º álbum também ainda não saiu, e «Labuta» é o seu **nome provável** (ainda por decidir). **[CONFIRMADO pelo utilizador, 22/06/2026]**
-- **Papel do Tó:** **N/A por agora.** Como não há gravação de estúdio publicada, não há (ainda) crédito de mistura/masterização atribuível ao Tó para *Labuta*. **[A CONFIRMAR no futuro]**, se/quando houver edição de estúdio.
-- **Artefacto existente:** vídeo ao vivo no YouTube — *link a recolher*. Pode entrar no arquivo como peça «ao vivo / a obra continua», **não** como prova de trabalho de estúdio do Tó.
-- *Nota de dados:* no export há ~4 registos com a etiqueta «Labuta», mas «labuta» aparece sobretudo como **termo comum** (= trabalho árduo). Só os usos como **nome próprio** («a Labuta», «coro para a Labuta») contam para o projeto. Disambiguar caso a caso.
+### Informação geral
+
+| Campo | Detalhe |
+| --- | --- |
+| **Título** | Bem Bonda |
+| **Artista** | Criatura |
+| **Ano** | 2021 |
+| **Editora** | Omnichord Records |
+| **Formato** | Vinil duplo + digital (Bandcamp, Spotify, plataformas de streaming) |
+| **Período de gravação** | Março 2019 – Outubro 2020 |
+| **Locais de gravação** | Namouche, Haus, Camaleão |
+| **Apoios** | Fundação GDA, Câmara Municipal do Fundão |
+| **Bandcamp** | https://criaturapt.bandcamp.com/album/bem-bonda |
+| **Bandcamp Album ID** | 4156733895 |
+
+### Crédito de engenharia de som
+
+> **Misturado e masterizado por: António Pinheiro da Silva**
+
+Fonte: Página oficial do Bandcamp da CRIATURA (S06)  
+Confiança: **Alta**
+
+Confirmação independente: Rimas e Batidas (S07) — "António Pinheiro da Silva misturou e masterizou o disco."
+
+### Alinhamento
+
+1. Anunciação
+2. Bem Bonda
+3. Lobbysómem
+4. A Festa do Medo do Gaiteiro
+5. Da Praxe
+6. O Padeiro — Parte I
+7. O Padeiro — Parte II
+8. O Namoro
+9. A Noiva
+10. O Encanto
+11. À Mãe
+
+### Ficha técnica completa
+
+**A Criatura:**
+
+- Acácio Barbosa — guitarra portuguesa
+- Alexandre Bernardo — bandolim elétrico, guitarra acústica, cavaquinhos
+- Cláudio Gomes — trompete
+- Edgar Valente — voz, piano, teclados e adufe
+- Fábio Cantinho — bateria
+- Gil Dionísio — voz e violino
+- Iúri Oliveira — percussões, Mbira
+- João Aguiar — guitarra elétrica
+- Paulo Lourenço — baixo elétrico
+- Ricardo Coelho — gaita de foles, flauta transversal, ocarina e palheta beiroa
+
+**Participações especiais:**
+
+- Yaw Tembe — trompete (Anunciação)
+- Coro dos Anjos — Anunciação, Bem Bonda, O Padeiro — Parte II, A Noiva
+
+**O Coro dos Anjos:**
+
+Anaïs Thinon, André Morais, Andrea Vertessen, Anne Sealand, António Rivotti, Beatriz Nande, Bruno Mimoso, Catarina Monteiro, Daniel Vasconcelos Melim, Diogo Vaz Cavaleiro, Dora Vicente, Gabriel Pepe, Irene Miranda, Joana Veiga, José Eduardo Amadeu, Katsiaryna Drozhzha, Hugo Santos, Mafalda Carvalho, Maria Henriques, Miguel Proença, Pedro Delgado, Rita Caldeira, Sara Mercier, Teresa Conceição, Tiago Jesus, Vasco Ribeiro, Yuri Wentink
+
+**Produção:**
+
+- Produzido por Paulo Lourenço, Edgar Valente e Gil Dionísio
+- Gravado por Paulo Lourenço, Bernardo Pastor, Quim Monte, Pedro Ferreira e Francisco Duque
+
+**Mistura e masterização:**
+
+- **António Pinheiro da Silva**
+
+**Artwork:**
+
+- Catherina Cardoso, João Catarino e Diogo Vaz Cavaleiro
+
+**Edição e distribuição:**
+
+- Omnichord Records (com apoio da Fundação GDA e Câmara Municipal do Fundão)
+
+*Fonte: mensagem de Edgar Valente (WhatsApp, 10/12/2020) com ficha técnica completa — confirmada por créditos públicos do Bandcamp.*
+
+### Cronologia das sessões de mistura (evidência WhatsApp)
+
+| Data | O que aconteceu | Fonte |
+| --- | --- | --- |
+| 30/09/2019 | Primeiras misturas marcadas com o Tó — "Padeiro I" e "À Mãe" | Palinhe |
+| 01–03/10/2019 | Dias de mistura no Tó | Edgar, Palinhe |
+| 19/10/2019 | Misturas com o Tó marcadas para 28–29 outubro | Edgar |
+| 28–29/10/2019 | Sessões de mistura no estúdio do Tó | Edgar, Palinhe, Gil |
+| 19/11/2019 | "Hoje é dia de misturas na casa do Tó" — referência ao cadeirão do Zé Mário | Edgar |
+| 08/10/2020 | Misturas finais marcadas: 30 outubro a 5 novembro | Edgar |
+| 30/10–10/11/2020 | Semana intensiva de misturas | Toda a banda |
+| 15/11/2020 | "AS AVENTURAS DO TÓ CRIATURA" — Gil publica atualizações faixa a faixa | Gil |
+| 15/11/2020 | "O ARRAIAL VAI COMEÇAR — o disco está fechado" | Gil |
+| 16/11/2020 | "E viva o Tó!" | Edgar |
+| 04/12/2020 | Masters para vinil no estúdio do Tó | Palinhe |
+| 10/12/2020 | Ficha técnica completa partilhada com crédito formal: "Misturado e masterizado por: António Pinheiro da Silva" | Edgar |
+
+### Sobre o contributo do Tó para o Bem Bonda
+
+A Rimas e Batidas descreveu o impacto do trabalho do Tó no som do álbum, referindo como ele transformou a densa instrumentação e as vozes dos CRIATURA num "objecto sonoro equilibrado e poderoso" (S07).
+
+Dentro da banda, as conversas durante as sessões de mistura revelam uma dinâmica viva de debate estético:
+
+- Tales: "Pessoalmente, não gosto de algumas opções estéticas de som do Tó" / "Mas… o Tó é o guru do reverb"
+- Gil: "Sinto que às vezes fica muito agudo"
+- Edgar: "O Tó hoje fez um bom trabalho afinação que também estava a precisar"
+- Gil: "O afinado tá muita visto, um gajo tem que ter coragem em inovar" — citação direta do Tó
+
+Estas conversas mostram que o Tó não era um técnico passivo: era um colaborador ativo com voz própria nas decisões estéticas.
+
+### Contexto emocional e pessoal
+
+- João (guitarrista): "Almoçar com o Tó — e ainda por cima com todos — devia ser feriado nacional"
+- Edgar, citando o Tó: "Vocês sabem que quem faz música assim, tem de ter um discurso político de futuro minimamente estruturado."
+- Edgar: "Citações do Tó: «Tens uma vontade de trabalhar, que te sai dos cotovelos!»"
+- Palinhe: "O Tó tem 70 anos… o pau já não é o mesmo"
+- Ricardo Gaiteiro: "Caramba sempre que vou a Lisboa é a correr… por acaso tenho saudades do Tó…"
 
 ---
 
-## 4. Áudio — IDs de embed (para a Listening Room)
+## Notas comparativas
 
-O utilizador autorizou embeds de áudio. IDs do leitor oficial Bandcamp:
-- **Aurora** — `album=1417799381`
-- **Bem Bonda** — `album=4156733895`
-- Padrão do leitor: `https://bandcamp.com/EmbeddedPlayer/v=2/album=<ID>/size=large/`
-
----
-
-## 5. Lacunas em aberto (a fechar com fonte)
-
-1. **[A CONFIRMAR]** Créditos do single *Labuta* e papel (se algum) do Tó.
-2. **[A CONFIRMAR]** Decisão sobre o estatuto de *Labuta* como 3.º álbum.
-3. **[A CONFIRMAR]** Livrete físico do vinil de *Bem Bonda* (letras + créditos) como fonte adicional.
-
-*(Fechado nesta atualização: lista de músicos da Aurora — agora confirmada via Bandcamp.)*
+| Aspeto | Aurora | Bem Bonda |
+| --- | --- | --- |
+| Período de gravação | 2014–2015 | Março 2019 – Outubro 2020 |
+| Locais | Musibéria, Kimahera, Quarto ao Lado | Namouche, Haus, Camaleão |
+| Papel do Tó | Mistura + masterização | Mistura + masterização |
+| Forma do nome no crédito | Tó Pinheiro da Silva | António Pinheiro da Silva |
+| Evidência WhatsApp | Não encontrada (estrutural — chat criado após lançamento) | Forte — cronologia completa de sessões |
+| Evidência pública | Bandcamp (S05) | Bandcamp (S06) + Rimas e Batidas (S07) |
+| Editora | Tradisom | Omnichord Records |
+| Formato | Digital | Vinil duplo + digital |
+| Lançamento | 5 de fevereiro de 2016 | 5 de fevereiro de 2021 |
 
 ---
 
-## 6. Fontes
+## Labuta (em curso — terceiro projeto com o Tó)
 
-- Bandcamp — *Aurora*: https://criaturapt.bandcamp.com/album/aurora
-- Bandcamp — *Bem Bonda*: https://criaturapt.bandcamp.com/album/bem-bonda
-- Bandcamp (Gil Dionísio) — *Aurora (2016)*: https://gildionsio.bandcamp.com/album/aurora-2016
-- Discogs — *Aurora* (CD, 2016): https://www.discogs.com/release/16977027-Criatura-Aurora
-- Tradisom — *Aurora*: https://tradisom.com/en/product/criatura/
-- Ficha técnica do *Bem Bonda* — partilhada no export do WhatsApp a 10/12/2020 (~linha 20750).
+Referências no WhatsApp indicam que o Tó também esteve envolvido na mistura e masterização do tema "Labuta", com sessões documentadas em fevereiro de 2024. Crédito formal ainda não confirmado via fonte pública (não há gravação de estúdio publicada).
 
-## Nota sobre conteúdos protegidos
+| Data | Referência |
+| --- | --- |
+| 15/02/2024 | Palinhe: "Amanhã à tarde vou ter com o Tó para terminar a labuta." |
+| 16/02/2024 | Palinhe: "E as misturas da labuta, que têm de ser pagas ao Tó" |
 
-Os textos de apresentação/manifesto e as letras das faixas são propriedade da banda e **não foram reproduzidos aqui**. Podem ser adicionados pelo próprio (titular dos direitos) numa fase posterior, separados dos créditos factuais.
+*Nota: requer confirmação pública antes de inclusão definitiva nos créditos.*
+
+---
+
+## Fontes
+
+| ID | Fonte | Tipo |
+| --- | --- | --- |
+| S05 | Bandcamp CRIATURA — Aurora | Oficial (Alta) |
+| S06 | Bandcamp CRIATURA — Bem Bonda | Oficial (Alta) |
+| S07 | Rimas e Batidas — artigo Bem Bonda | Publicação musical (Alta) |
+| S31 | Instagram Edgar Valente — sessão final mix | Rede social pessoal (Média) |
+| WhatsApp | Extração CRIATURA (207 registos) | Privado — não publicar |

@@ -1,76 +1,142 @@
-# Tó Pinheiro da Silva — Biografia & Obra (Body of Work)
-### Retrato alargado para o Arquivo CRIATURA
+# António "Tó" Pinheiro da Silva
+## Biografia e Obra
 
-**Projeto:** Arquivo de Memória CRIATURA — Tó Pinheiro da Silva
-**Documento:** Biografia e percurso profissional do Tó, para alimentar o **Retrato (Portrait)**.
-**Estatuto:** Contexto **externo** sobre o Tó (para além da CRIATURA), a partir de fontes públicas. Manter separado da prova do WhatsApp.
-**Idioma:** Português de Portugal.
-
-> **Nota importante — tributo em vida.** Tudo indica que o Tó é uma **pessoa viva e em atividade** (ver percurso). Este é um **tributo em vida**, não um memorial. Para qualquer versão **pública**, obter o **consentimento do próprio** e usar **fotos/textos autorizados**.
-
-**Legenda:** [CONFIRMADO] fonte pública identificada · [A CONFIRMAR] a validar. Fontes no fim.
+**Última atualização:** 2026-06-23  
+**Fontes:** Dossier unificado (pesquisa pública), Discogs (353 créditos), Bandcamp oficial, RTP/Lusa, Rimas e Batidas, Universidade Lusófona, ETIC, fmstereo, Andamento Produções  
+**Língua:** Português europeu (para o site) com notas editoriais em inglês
 
 ---
 
-## Quem é o Tó (retrato)
+## Quem é o Tó
 
-Tó Pinheiro da Silva — formalmente **António Pinheiro da Silva** — é um **engenheiro de som português**, natural do **Barreiro**. Segundo o texto biográfico de *A Aventura do Som*, é **consensualmente reconhecido como o engenheiro que mais contribuiu para a produção discográfica em Portugal**, tendo gravado e misturado **mais de 150 discos** de alguns dos maiores nomes da música portuguesa. *(Superlativos atribuídos à fonte; ver «Obra».)* [CONFIRMADO — fonte: *A Aventura do Som*]
+António Pinheiro da Silva — conhecido como Tó Pinheiro da Silva, Tó Pinheiro, ou simplesmente Tó — é um dos mais importantes engenheiros de som portugueses, com uma carreira que atravessa quase cinco décadas de gravação, mistura, masterização, produção e ensino.
 
-Para a CRIATURA, foi quem **misturou e masterizou os dois álbuns** — *Aurora* (2016) e *Bem Bonda* (2021). Ver `album_credits_aurora_bem_bonda.md`.
+O seu trabalho liga-se a alguns dos nomes mais relevantes da música portuguesa: Madredeus, Camané, Jorge Palma, GNR, Dulce Pontes, António Variações, UHF, Sétima Legião, José Afonso (reedições), Sérgio Godinho, Amélia Muge, B Fachada, DJ MARFOX, Puto Tito, DJ Danifox, CAVEIRA, Rita Braga, Hugo Vasco Reis — e CRIATURA, cuja Aurora (2016) e Bem Bonda (2021) misturou e masterizou.
 
-**O que isto significa para o arquivo:** a banda não trabalhou apenas com «o senhor que fazia o som» — aprendeu com **uma das figuras mais importantes da produção discográfica portuguesa**. É o coração do «o que aprendemos com ele».
-
----
-
-## Percurso (cronologia)
-*(Fonte principal: A Aventura do Som; nascimento e Perspectiva: Jornal Rostos, 20/10/2020.)*
-
-- **Nascimento / raízes:** natural do **Barreiro**; **nascido c. 1950** (celebrou **70 anos** em outubro de 2020). *[idade INFERIDA; data exata A CONFIRMAR — Jornal Rostos, 20/10/2020]*
-- **Formação inicial:** frequentou o **Conservatório Nacional de Lisboa**; toca **guitarra** e **flauta transversal**. Estudou **Engenharia Química** na Faculdade de Ciências de Lisboa, onde foi **responsável técnico pelos laboratórios**.
-- **Anos 80:** membro da histórica e popular banda **Banda do Casaco**.
-- **1982 — Londres / Abbey Road:** formou-se nos **Abbey Road Studios**, colaborando com produtores e engenheiros lendários — **Ken Townsend** (The Beatles, John Lennon), **Francis Dillnut**, **Peter Vince** (Cliff Richard, Olivia Newton-John, The Beatles, The Shadows, Maria Callas) e o sonoplasta **Eric Tomlinson** (Star Wars, Indiana Jones, James Bond, Amadeus, Alien).
-- **Regresso a Portugal:** nomeado **Diretor Técnico dos Estúdios Valentim de Carvalho** (Paço d'Arcos); **primeiro engenheiro de som em Portugal qualificado para a consola SSL 4000E**.
-- **Inovação:** desenvolveu o software de análise **«DELIRIUM»**, reconhecido nacional e internacionalmente (análise associada ao som ao vivo e à produção de estúdio).
-- **Atualmente:** **professor convidado** no Departamento de Cinema e Artes dos Media / **ECATI da Universidade Lusófona (ULHT)**, em Lisboa; mantém atividade profissional como engenheiro de som a partir do seu **estúdio em Oeiras**.
-- **Grupos:** **Companhia do Canto Popular** e **Perspectiva** (Discogs). A **Perspectiva** fez em **1977** um trabalho **pioneiro no rock de expressão portuguesa**; o Tó é figura incontornável das memórias da música dos anos 70 do **Barreiro**, da região e do país. *[CONFIRMADO — Jornal Rostos, 20/10/2020]*
+Do fado à música eletrónica de Lisboa, do rock dos anos 80 à world music contemporânea, a marca sonora do Tó está presente em mais de 350 discos.
 
 ---
 
-## Obra / Discografia — [CONFIRMADO, fonte: Discogs]
+## Números
 
-- **277 entradas de disco** creditadas; **316 créditos** no total, por função: **Técnica 252** (gravação / mistura / masterização), **Produção 24**, **Instrumentos & Performance 19**, **Escrita & Arranjo 13**, **Direção/Regência 4**, **Voz 3**, **Featuring 1**.
-- **Período:** ~**1977 a 2025**.
-- **Reconciliação de números:** o currículo fala em «mais de 150 discos» (de nomes maiores); o Discogs lista **277 entradas**, incluindo compilações e reedições. Não há contradição — fontes e critérios diferentes.
-- **Nomes de relevo** (do currículo, corroborados pela discografia Discogs): **Madredeus, Dulce Pontes, Carlos do Carmo, Camané, Teresa Salgueiro, Mário Laginha, Sérgio Godinho, GNR, Lena d'Água, Rádio Macau, Jorge Palma, Sétima Legião, Maria João Pires, António Variações, Heróis do Mar, António Pinho Vargas, Amor Electro.**
-- **Ligação CRIATURA:** *Aurora* (**Criatura**, 2016) consta da discografia Discogs — corroboração externa do elo.
-- **Lista completa:** as **277 entradas** estão preservadas no PDF de origem `to-__trabalho_discografico.pdf` (impressão do Discogs, incluída no pack). Para uma versão **limpa e máquina-a-máquina** de todos os títulos, recomenda-se uma **exportação CSV do Discogs** (mais fiável do que transcrever da imagem). A transcrição manual completa pode ser feita a pedido, marcando títulos truncados como [A CONFIRMAR].
+- **353** créditos verificados no Discogs
+- **168** artistas diferentes
+- **1976–2025** — quase 50 anos de atividade
+- **+150** discos gravados e misturados (estimativa da biografia institucional da Lusófona)
 
 ---
 
-## Aliases — [CONFIRMADO, fonte: Discogs]
+## Percurso
 
-António Pinheiro da Silva · Tó · Tó Pinheiro · Tó Pinheiro da Silva · Tó P. Silva · Tó P. Da Silva · T. Pinheiro da Silva · To' Pinheiro · Antonio Pinheiro · Antonio Pinheiro Da Silba *(variante/erro)* · **António Pinho** · **António Silva**.
+### Formação e início
 
-*(Útil para os filtros de pesquisa do Evidence — alarga a deteção de menções no WhatsApp, p. ex. as variantes «António Pinho» e «António Silva», que não estavam na lista inicial.)*
+Natural do Barreiro, estudou no Conservatório Nacional de Lisboa, onde aprendeu guitarra e flauta transversal. Foi membro da Banda do Casaco, um dos primeiros projetos onde aparece creditado (1977).
+
+Em 1982, partiu para Londres para formação nos Abbey Road Studios. Segundo a biografia institucional da Universidade Lusófona, foi o primeiro engenheiro de som português qualificado na consola SSL 4000E.
+
+*Nota editorial: esta informação provém de uma biografia de evento da Lusófona (S01). Recomenda-se confirmação direta com colaboradores ou família para uso biográfico definitivo.*
+
+### Valentim de Carvalho e os anos 80
+
+Após a formação em Londres, tornou-se diretor técnico dos estúdios Valentim de Carvalho em Paço de Arcos. Neste período, o seu nome aparece associado a gravações de referência do rock e pop portugueses: Heróis do Mar, António Variações, UHF, GNR, Sétima Legião, Jorge Palma.
+
+Rodrigo Leão, a propósito do álbum *A Um Deus Desconhecido* dos Sétima Legião (1984), referiu-se ao Tó como um "engenheiro de som que eu respeito muito" (Andamento Produções, S03).
+
+### Madredeus e o reconhecimento público (anos 90)
+
+O trabalho com os Madredeus consolidou a sua reputação. Creditado como produtor e engenheiro de mistura em *Existir* (1990), *O Espírito da Paz* (1994), *Ainda* (1995) e *Movimento* (2001).
+
+Em 1991, foi um dos seis profissionais dos bastidores da música portuguesa destacados na série televisiva *Luz na Sombra*, de Sérgio Godinho, transmitida pela RTP. A descrição original do programa dizia: "No estúdio é ele que sabe, pode e manda."
+
+### Fado e diversidade (anos 90–2000)
+
+O seu trabalho estendeu-se ao fado com Camané (*Na Linha da Vida*, 1998; *Esta Coisa da Alma*, 2000; *Pelo Dia Dentro*, 2001; *Sempre de Mim*, 2008), Pedro Moutinho, e à voz de Dulce Pontes (*O Primeiro Canto*, 1999).
+
+Paralelamente, trabalhou com Amélia Muge, José Mário Branco e Sérgio Godinho, entre outros.
+
+### José Afonso — restauro e remasterização (2012–2013)
+
+Em 2012–2013, foi responsável pelo restauro e remasterização digital de 11 álbuns de José Afonso, originalmente editados entre 1968 e 1981. Segundo a RTP/Lusa (S20), os álbuns foram "restaurados e remasterizados digitalmente pelo engenheiro de som António Pinheiro da Silva."
+
+### Cena independente e eletrónica de Lisboa (2009–2023)
+
+O alcance do seu trabalho estende-se à cena independente e eletrónica de Lisboa: B Fachada (2009, 2010), Real Combo Lisbonense (2009), Aquaparque (2011), DJ MARFOX (2011, Príncipe), Puto Tito (2019, Príncipe), DJ Danifox (2023, Príncipe), Rita Braga (2023), CAVEIRA (2024), Hugo Vasco Reis (2025).
+
+O texto de lançamento do álbum *ficar vivo* dos CAVEIRA (2024) descreve-o como um "ground-breaking Portuguese sound engineer" (S15).
+
+### CRIATURA — Aurora e Bem Bonda
+
+A ligação do Tó à CRIATURA está documentada nos dois álbuns de estúdio da banda:
+
+**Aurora (2016)** — "Misturado e masterizado por Tó Pinheiro da Silva." Gravado entre 2014 e 2015 nos estúdios Musibéria, Kimahera e Quarto ao Lado. Editado pela Tradisom Produções Culturais.
+
+**Bem Bonda (2021)** — "Misturado e masterizado por: António Pinheiro da Silva." Gravado entre março de 2019 e outubro de 2020 nos estúdios Namouche, Haus e Camaleão. Editado pela Omnichord Records.
+
+A Rimas e Batidas, num artigo de 2021 sobre os CRIATURA e o Bem Bonda, confirmou independentemente o crédito e descreveu como o trabalho do Tó transformou a densa instrumentação da banda num "objecto sonoro equilibrado e poderoso" (S07).
+
+### Ensino
+
+O Tó é professor na ETIC, onde é identificado como músico, produtor musical e técnico de som. Participou também em eventos na Universidade Lusófona (ECATI), incluindo uma sessão sobre o impacto da pandemia na produção musical.
+
+### Atividade recente (2023–2025)
+
+Continua ativo: créditos recentes incluem Iúri Oliveira & Edu Mundo — *Casa* (2023), DJ Danifox — *Ansiedade* (2023), Rita Braga — *Illegal Planet* (2023), CAVEIRA — *ficar vivo* (2024) e Hugo Vasco Reis — *Imago* (2025).
 
 ---
 
-## Testemunhos externos *(usar só com autorização)*
+## Descoberta: RTP 1989
 
-- **«A Aventura do Som»** — programa/sessão em que o Tó é orador; é a fonte do texto biográfico acima.
-- **Instagram (abr. 2026)** — testemunho de uma colaboradora a agradecer o percurso partilhado, descrevendo-o (em paráfrase) como uma «escola viva» de rigor, ouvido apurado e generosidade. **Não reproduzido aqui na íntegra** (conteúdo de terceiros). Pode ser citado **com autorização** dos envolvidos.
+Em 1989, o Tó apareceu no programa televisivo "Haja Música — Parte II" da RTP 2, ao lado de Pedro Ayres Magalhães, numa conversa sobre António Variações. O programa está disponível no arquivo da RTP: https://arquivos.rtp.pt/conteudos/haja-musica-parte-ii-2/
 
 ---
 
-## Fontes
+## Citações
 
-- **Discogs** — *Antonio Pinheiro Da Silva*: https://www.discogs.com/artist/435863-Antonio-Pinheiro-Da-Silva (perfil, aliases, 316 créditos, 277 entradas de discografia).
-- **«A Aventura do Som»** — texto biográfico (programa/sessão com o Tó como orador). *Captura fornecida pelo utilizador.*
-- **Instagram** — publicação de colaboradora, tributo (abr. 2026), em paráfrase. *Captura fornecida pelo utilizador.*
-- **Jornal Rostos** (Facebook, 20/10/2020) — «Tó Pinheiro celebrou 70 anos de vida»: Barreiro, banda Perspectiva (1977), 70.º aniversário. *Captura fornecida pelo utilizador.*
-- **PDF de origem da discografia:** `to-__trabalho_discografico.pdf`.
+> "No estúdio é ele que sabe, pode e manda."
+> — Descrição do programa *Luz na Sombra*, RTP, 1991
 
-## Direitos & privacidade
+> "Engenheiro de som que eu respeito muito."
+> — Rodrigo Leão, sobre o trabalho nos Sétima Legião
 
-- O texto biográfico e o post de Instagram são **conteúdo de terceiros**: aqui usam-se apenas **factos** (reformulados), não o texto literal.
-- O Tó é uma **pessoa viva**: para uma versão **pública**, obter o seu **consentimento** e usar **fotografias/textos autorizados**. A foto do Discogs serve para uso **privado**, não público.
+> "Vocês sabem que quem faz música assim, tem de ter um discurso político de futuro minimamente estruturado."
+> — Tó Pinheiro da Silva aos CRIATURA, após ouvir o Bem Bonda (via WhatsApp, confirmado por Edgar Valente)
+
+> "O afinado tá muita visto, um gajo tem que ter coragem em inovar."
+> — Tó Pinheiro da Silva, durante as sessões de mistura do Bem Bonda (via WhatsApp, registado por Gil Dionísio)
+
+> "Tens uma vontade de trabalhar, que te sai dos cotovelos!"
+> — Tó Pinheiro da Silva a Edgar Valente (via WhatsApp)
+
+---
+
+## Nomes e variantes
+
+| Forma | Contexto |
+| --- | --- |
+| **António Pinheiro da Silva** | Nome completo formal; créditos oficiais e institucionais |
+| **Tó Pinheiro da Silva** | Forma creditada mais comum em português |
+| **Tó Pinheiro** | Forma curta; uso público e social |
+| **Tó** | Diminutivo; uso informal e dentro da banda |
+
+---
+
+## Fontes principais
+
+| ID | Fonte | URL |
+| --- | --- | --- |
+| S01 | Universidade Lusófona — biografia de evento | https://www.ulusofona.pt/evento/impacto-pandemia-prod-musical |
+| S02 | ETIC — página de corpo docente | https://etic.pt/curso/design-de-som-pt/ |
+| S03 | Andamento Produções — perfil Rodrigo Leão | https://andamentoproducoes.com/agenciamento/298/rodrigo-leao |
+| S04 | fmstereo — arquivo Tó Pinheiro da Silva | https://www.profelectro.info/fm/tag/to-pinheiro-da-silva/ |
+| S05 | CRIATURA — Aurora (Bandcamp) | https://criaturapt.bandcamp.com/album/aurora |
+| S06 | CRIATURA — Bem Bonda (Bandcamp) | https://criaturapt.bandcamp.com/album/bem-bonda |
+| S07 | Rimas e Batidas — artigo CRIATURA/Bem Bonda | https://www.rimasebatidas.pt/criatura-ha-uma-intencao-profunda-de-trabalhar-a-raiz-popular-a-partir-de-uma-matriz-universal/ |
+| S15 | CAVEIRA — ficar vivo (Bandcamp) | https://caveiracaveira.bandcamp.com/album/ficar-vivo |
+| S20 | RTP/Lusa — reedição José Afonso | https://www.rtp.pt/noticias/cultura/albuns-de-jose-afonso-lancados-entre-1968-e-1981-vao-ser-reeditados_n1314935 |
+| D01 | Discogs — página de artista | https://www.discogs.com/artist/435863-Antonio-Pinheiro-Da-Silva |
+
+---
+
+## Nota editorial
+
+Este documento é baseado em fontes públicas verificadas e em evidência extraída (com consentimento) da comunicação interna da CRIATURA. Itens marcados com confiança "Média" requerem confirmação direta antes de uso biográfico definitivo. O Tó está vivo e ativo — este é um tributo, não um memorial.
