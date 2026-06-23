@@ -301,8 +301,13 @@ elif page == "Memórias":
             block += f"\n{story.strip()}\n\n---\n\n"
 
             path = CONTENT / MEMORIES_FILE
+            # Guard: if the file doesn't end in a newline, the appended "## ..."
+            # heading would glue onto the last line and fail to parse. Prepend a
+            # newline only when needed (skip for empty/new files).
+            existing = path.read_text(encoding="utf-8") if path.exists() else ""
+            prefix = "" if (not existing or existing.endswith("\n")) else "\n"
             with path.open("a", encoding="utf-8") as f:
-                f.write(block)
+                f.write(prefix + block)
 
             st.success(
                 "✅ Memória guardada. Obrigado por contribuíres para o arquivo."
