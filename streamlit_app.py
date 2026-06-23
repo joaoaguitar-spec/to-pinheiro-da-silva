@@ -35,14 +35,21 @@ def check_password() -> bool:
     # largura fixa (não mais larga que o título) e centrada. O CSS só é
     # injectado no ecrã de login — nas páginas autenticadas esta função
     # retorna cedo, por isso não afecta o formulário das Memórias.
+    # Limita toda a coluna do login a uma largura fixa e centrada — assim o
+    # título, a foto e a caixa de login ficam todos alinhados ao centro.
+    # Só é injectado no ecrã de login (esta função retorna cedo após auth).
     st.markdown(
         "<style>"
-        "div[data-testid='stForm']{max-width:560px;margin:0.5rem auto 0;}"
+        ".block-container{max-width:600px;}"
+        "div[data-testid='stForm']{margin-top:1rem;}"
         "</style>"
-        "<h1 style='text-align:center;margin-bottom:1.5rem;'>"
+        "<h1 style='text-align:center;margin-bottom:1.25rem;'>"
         "Arquivo Tó Pinheiro da Silva</h1>",
         unsafe_allow_html=True,
     )
+    login_img = Path(__file__).parent / "assets" / "to_pinheiro_login.jpg"
+    if login_img.exists():
+        st.image(str(login_img), width="stretch")
     with st.form("login"):
         pw = st.text_input("Palavra-passe", type="password")
         submitted = st.form_submit_button("Entrar", width="stretch")
