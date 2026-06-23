@@ -10,5 +10,9 @@ failed_covers.log
 __pycache__/
 *.pyc
 
+# Private / local-only — never commit (Layer 0 raw data + redundant snapshot)
+docs/WhatsApp Chat with CRIATURA(1).txt
+docs/files.zip
+
 # Streamlit secrets (may contain the app password / tokens)
 .streamlit/secrets.toml
