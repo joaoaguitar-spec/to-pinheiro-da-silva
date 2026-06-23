@@ -31,17 +31,21 @@ CONTENT = Path(__file__).parent / "content"
 def check_password() -> bool:
     if st.session_state.get("auth_ok"):
         return True
-    # Centrar o login numa coluna estreita ao meio (estética mínima e limpa).
-    left, mid, right = st.columns([1, 1.4, 1])
-    with mid:
-        st.markdown(
-            "<h1 style='text-align:center;margin-bottom:1.5rem;'>"
-            "Arquivo Tó Pinheiro da Silva</h1>",
-            unsafe_allow_html=True,
-        )
-        with st.form("login"):
-            pw = st.text_input("Palavra-passe", type="password")
-            submitted = st.form_submit_button("Entrar", width='stretch')
+    # Estética mínima: título centrado e a caixa de login limitada a uma
+    # largura fixa (não mais larga que o título) e centrada. O CSS só é
+    # injectado no ecrã de login — nas páginas autenticadas esta função
+    # retorna cedo, por isso não afecta o formulário das Memórias.
+    st.markdown(
+        "<style>"
+        "div[data-testid='stForm']{max-width:560px;margin:0.5rem auto 0;}"
+        "</style>"
+        "<h1 style='text-align:center;margin-bottom:1.5rem;'>"
+        "Arquivo Tó Pinheiro da Silva</h1>",
+        unsafe_allow_html=True,
+    )
+    with st.form("login"):
+        pw = st.text_input("Palavra-passe", type="password")
+        submitted = st.form_submit_button("Entrar", width="stretch")
     if submitted:
         try:
             expected = st.secrets["app_password"]
@@ -51,8 +55,7 @@ def check_password() -> bool:
             st.session_state.auth_ok = True
             st.rerun()
         else:
-            with mid:
-                st.error("Palavra-passe incorreta.")
+            st.error("Palavra-passe incorreta.")
     return False
 
 
