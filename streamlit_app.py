@@ -82,6 +82,15 @@ if page == "Início":
         "décadas. Este arquivo é um **tributo em vida** — a memória do que a "
         "banda viveu e aprendeu com ele."
     )
+    st.info(
+        "📺 **Arquivo RTP — 1989**\n\n"
+        "Em Junho de 1989, Tó Pinheiro da Silva apareceu no programa "
+        "*Haja Música — Parte II* (RTP 2), ao lado de Pedro Ayres Magalhães, "
+        "falando sobre António Variações. É um dos únicos registos audiovisuais "
+        "conhecidos de Tó em câmara.\n\n"
+        "👉 [Ver no Arquivo RTP](https://arquivos.rtp.pt/conteudos/haja-musica-parte-ii-2/)\n"
+        "*(O vídeo abre em nova aba — não pode ser incorporado por direitos de autor RTP.)*"
+    )
     st.divider()
     st.markdown(read_md("to_pinheiro_biografia_e_obra.md"))
 
@@ -129,6 +138,15 @@ elif page == "Cronologia":
         "condutor do percurso que a banda fez com ele em estúdio."
     )
     st.divider()
+    st.markdown(
+        "**📺 1989 — Televisão** · "
+        "*Haja Música — Parte II*, RTP 2, 9 de Junho de 1989. "
+        "Tó Pinheiro da Silva e Pedro Ayres Magalhães falam sobre António Variações. "
+        "Tó aparece em câmara a partir de ~20:43. "
+        "[🎬 Ver no arquivo RTP](https://arquivos.rtp.pt/conteudos/haja-musica-parte-ii-2/)"
+    )
+    st.caption("Nota: o vídeo abre em nova aba — não pode ser incorporado por direitos de autor RTP.")
+    st.markdown("")
     milestones = [
         ("2014–2015", "Gravação de *Aurora* (Musibéria · Kimahera · Quarto ao Lado)."),
         ("5 fev 2016", "Lançamento de *Aurora* — mistura e masterização: Tó."),
