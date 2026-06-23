@@ -42,11 +42,12 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 1.5rem;
     }
-    @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+    @media (max-width: 1200px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 700px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 500px) { .grid { grid-template-columns: 1fr; } }
 
     .card {
       display: flex;
@@ -54,34 +55,34 @@
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 1.1rem 1.1rem 1.2rem;
+      padding: .9rem .9rem 1rem;
       min-height: 100%;
     }
     .card .artist {
       font-family: "Playfair Display", Georgia, serif;
       font-weight: 700;
-      font-size: 1.25rem;
-      margin: 0 0 .15rem;
+      font-size: 1.1rem;
+      margin: 0 0 .1rem;
       line-height: 1.2;
     }
     .card .album {
       font-style: italic;
-      font-size: .98rem;
+      font-size: .85rem;
       color: rgba(240, 246, 252, 0.92);
-      margin: 0 0 .35rem;
+      margin: 0 0 .3rem;
     }
-    .card .year { color: var(--muted); font-size: .85rem; margin: 0 0 .6rem; }
+    .card .year { color: var(--muted); font-size: .75rem; margin: 0 0 .5rem; }
     .role-tag {
       align-self: flex-start;
       display: inline-block;
       background: var(--crimson);
       color: #fff;
-      font-size: .72rem;
+      font-size: .65rem;
       font-weight: 600;
-      letter-spacing: .3px;
-      padding: 3px 11px;
+      letter-spacing: .2px;
+      padding: 2px 8px;
       border-radius: 999px;
-      margin: 0 0 .9rem;
+      margin: 0 0 .7rem;
       text-transform: uppercase;
     }
     .embed { margin-top: auto; }
