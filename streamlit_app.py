@@ -184,6 +184,53 @@ elif page == "Ouvir":
         height=472,
     )
 
+    # ----- Outros álbuns com a marca de Tó Pinheiro da Silva (Spotify) -----
+    st.divider()
+    st.subheader("Outros álbuns com a marca de Tó Pinheiro da Silva")
+    st.markdown(
+        "Uma seleção de álbuns que passaram pelas mãos do Tó — misturados, "
+        "masterizados ou produzidos por ele. Ordenados cronologicamente."
+    )
+
+    # (artista, álbum, ano, papel, spotify_album_id)
+    # NOTA: o mini-LP original "Estou De Passagem" (UHF, 1982) não existe como
+    # álbum autónomo no Spotify; usa-se a compilação "O Melhor de 300 Canções",
+    # que inclui a faixa.
+    spotify_albums = [
+        ("Banda Do Casaco", "Hoje Há Conquilhas Amanhã Não Sabemos", "1977",
+         "Membro da banda", "1W3AHzbTQDntDiwwtDK1En"),
+        ("UHF", "Estou De Passagem", "1982",
+         "Mistura · via compilação «O Melhor de 300 Canções»",
+         "1NhQCFk9rOA71KT6YmZY9v"),
+        ("António Variações", "Dar & Receber [Restaurado]", "1984/2000",
+         "Participação", "1C7LQUX1WqA5RDJuSkhvRw"),
+        ("GNR", "Os Homens Não Se Querem Bonitos", "1985",
+         "Mistura", "79WoroF6WDvMXN93zyYrVB"),
+        ("Jorge Palma", "Bairro Do Amor", "1989",
+         "Produção · mistura", "3JowKnCpS9URNgmxBVTnC6"),
+        ("Madredeus", "Existir", "1990",
+         "Produção · mistura", "5SzQnS0MjTnTH187aHNtnA"),
+        ("Camané", "Na Linha Da Vida", "1998",
+         "Mistura", "5x7vCaFLlhIf6g9NCSIK4m"),
+        ("Dulce Pontes", "O Primeiro Canto", "1999",
+         "Produção · mistura", "637OSidFKVySDROx4ixc3A"),
+    ]
+
+    for artist, album, year, role, album_id in spotify_albums:
+        st.markdown(
+            f"**{artist}**  \n*{album}* · {year} · {role}"
+        )
+        components.html(
+            '<iframe style="border-radius:12px" '
+            f'src="https://open.spotify.com/embed/album/{album_id}'
+            '?utm_source=generator&theme=0" width="100%" height="352" '
+            'frameBorder="0" allowfullscreen="" '
+            'allow="autoplay; clipboard-write; encrypted-media; fullscreen; '
+            'picture-in-picture" loading="lazy"></iframe>',
+            height=352,
+        )
+        st.markdown("---")
+
 elif page == "Álbuns":
     st.title("Álbuns")
     st.markdown(
