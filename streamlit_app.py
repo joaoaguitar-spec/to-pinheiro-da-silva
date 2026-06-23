@@ -162,7 +162,14 @@ elif page == "Cronologia":
     st.info("A enriquecer com datas da base de evidência.")
 
 elif page == "Evidência":
-    st.title("Evidência (WhatsApp)")
+    st.title("Evidência")
+    st.markdown(
+        "Esta página reúne os **207 registos de prova** extraídos do grupo de "
+        "WhatsApp da banda, onde se documenta o trabalho com o Tó. Podem "
+        "**pesquisar por palavra-chave** e **filtrar** por secção, estado de "
+        "confirmação e autor. Cada registo preserva a mensagem original."
+    )
+    st.divider()
     records = load_jsonl(EVIDENCE_FILE)
     if not records:
         st.warning(f"falta `content/{EVIDENCE_FILE}`")
